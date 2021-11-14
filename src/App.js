@@ -3,20 +3,20 @@ import { Route, Routes } from "react-router-dom";
 import AllMeetupsPage from "./pages/AllMeetUps";
 import NewMeetupsPage from "./pages/NewMeetup";
 import AllFavoritesPage from "./pages/Favorites";
-import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/layout/Layout";
+
 
 function App() {
   return (
-    <div>
-      <MainNavigation />
-      <Routes> 
-        <Route path="/" element={<AllMeetupsPage />} />
-        <Route path="/nuevosAmigos" element={<NewMeetupsPage />} />
-        <Route path="/misFavoritos" element={<AllFavoritesPage /> } />
-      </Routes>
-        
-     
-    </div>
+    
+      <Layout> 
+        <Routes> 
+          <Route path="/" element={<AllMeetupsPage />} />
+          <Route path="/nuevosAmigos" element={<NewMeetupsPage />} />
+          <Route path="/misFavoritos" element={<AllFavoritesPage /> } />
+        </Routes>
+      </Layout>
+    
   );
 }
 

@@ -1,7 +1,15 @@
-import React from 'react';
+import React from "react";
+import NewMeetupForm from '../components/meetups/NewMeetupForm';
 
-function NewMeetupsPage() {
-    return (<div>Nuevos Amigos</div>)
- }
- 
- export default NewMeetupsPage;
+function NewMeetup() {
+
+    return( 
+        <section> 
+            <h1> Añadir Nuevo Grupo de Geek en España </h1>
+            <NewMeetupForm />
+        </section>
+        
+    )
+}
+
+export default NewMeetup;

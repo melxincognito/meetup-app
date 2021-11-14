@@ -13,7 +13,7 @@ function MainNavigation() {
             <Link to="/"> Todos los grupos </Link>
           </li>
           <li>
-            <Link to="/nuevosAmigos"> Nuevos Amigos </Link>
+            <Link to="/nuevosAmigos"> Añadir un Grupo </Link>
           </li>
           <li>
             <Link to="/misFavoritos"> Mis Favoritos </Link>
